@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-bqrz($_3j*6cnh@i_a0lhuo^d+6g7mcm-x*08)lo8jw%l2iw8-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['p4-reddit-style-blog-django-95575d271be5.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['p4-reddit-style-blog-django-95575d271be5.herokuapp.com', 'localhost', '8000-mikemaroni9-p4redditsty-wa4weck2sz0.ws-eu104.gitpod.io']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'blog',
 ]
 
@@ -85,6 +86,7 @@ WSGI_APPLICATION = 'p4reddit.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 #}
+
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
