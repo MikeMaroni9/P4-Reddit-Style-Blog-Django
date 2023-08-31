@@ -32,6 +32,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['p4-reddit-style-blog-django-95575d271be5.herokuapp.com', 'localhost', '8000-mikemaroni9-p4redditsty-qc22q8wfe7r.ws-eu104.gitpod.io']
 
+CLOUDINARY = {
+    'cloud_name': 'dyv1fobjp',
+    'api_key': '827227132985194',
+    'api_secret': '1YpVoPKEK9R2tnxZnbN5daiIzlg'
+}
+
+          
+
 
 # Application definition
 
@@ -61,7 +69,7 @@ ROOT_URLCONF = 'p4reddit.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
