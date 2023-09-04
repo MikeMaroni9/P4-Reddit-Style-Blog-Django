@@ -14,6 +14,7 @@ from pathlib import Path
 
 import os
 import dj_database_url
+from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
      import env
 
@@ -30,7 +31,7 @@ SECRET_KEY = 'django-insecure-bqrz($_3j*6cnh@i_a0lhuo^d+6g7mcm-x*08)lo8jw%l2iw8-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['p4-reddit-style-blog-django-95575d271be5.herokuapp.com', 'localhost', '8000-mikemaroni9-p4redditsty-vad3lbo387d.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['p4-reddit-style-blog-django-95575d271be5.herokuapp.com', 'localhost', '8000-mikemaroni9-p4redditsty-3z5n953z7i4.ws-eu104.gitpod.io']
 
 CLOUDINARY = {
     'cloud_name': 'dyv1fobjp',
@@ -65,6 +66,14 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+MESSAGE_TAGS = {
+        messages.DEBUG: 'alert-info',
+        messages.INFO: 'alert-info',
+        messages.SUCCESS: 'alert-success',
+        messages.WARNING: 'alert-warning',
+        messages.ERROR: 'alert-danger',
+}
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
