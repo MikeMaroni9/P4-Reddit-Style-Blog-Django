@@ -34,7 +34,7 @@ DEBUG = True
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
-ALLOWED_HOSTS = ['p4-reddit-style-blog-django-95575d271be5.herokuapp.com', 'localhost', '8000-mikemaroni9-p4redditsty-9epok5trhrb.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['p4-reddit-style-blog-django-95575d271be5.herokuapp.com', 'localhost', '8000-mikemaroni9-p4redditsty-weqkgfv061t.ws-eu104.gitpod.io']
 
 CLOUDINARY = {
     'cloud_name': 'dyv1fobjp',
