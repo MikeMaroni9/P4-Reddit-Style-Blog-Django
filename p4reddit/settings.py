@@ -31,6 +31,9 @@ SECRET_KEY = 'django-insecure-bqrz($_3j*6cnh@i_a0lhuo^d+6g7mcm-x*08)lo8jw%l2iw8-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+
 ALLOWED_HOSTS = ['p4-reddit-style-blog-django-95575d271be5.herokuapp.com', 'localhost', '8000-mikemaroni9-p4redditsty-3z5n953z7i4.ws-eu104.gitpod.io']
 
 CLOUDINARY = {
